@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Vynta Admin",
+      "runtimeExecutable": "/bin/sh",
+      "runtimeArgs": ["-c", "PATH=/usr/local/bin:$PATH npm run dev"],
+      "port": 3000
+    },
+    {
+      "name": "Vynta Next",
+      "runtimeExecutable": "/bin/sh",
+      "runtimeArgs": ["-c", "cd '/Users/valentinvirasoro/Desktop/Vynta Next' && PATH=/usr/local/bin:$PATH npm run dev -- --port 3001"],
+      "port": 3001
+    }
+  ]
+}
