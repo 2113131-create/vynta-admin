@@ -260,10 +260,76 @@
     }
 
     /* ── Mobile ────────────────────────────────────────────── */
-    @media (max-width: 480px) {
-      .form { flex-direction: column; }
-      .form-input { border-right: 1px solid rgba(255,255,255,0.2); border-bottom: none; width: 100%; }
-      .form-btn { width: 100%; text-align: center; }
+    @media (max-width: 600px) {
+      /* Distribuye el contenido a lo largo de toda la pantalla */
+      .stage {
+        padding: 52px 24px 72px;
+        justify-content: space-between;
+        gap: 0;
+      }
+
+      /* Label: una sola línea arriba */
+      .top-label {
+        font-size: 8px;
+        letter-spacing: 0.16em;
+        white-space: nowrap;
+        margin-bottom: 0;
+      }
+
+      /* Logo compacto */
+      .logo {
+        gap: 12px;
+        margin-bottom: 0;
+      }
+      .logo-icon { width: 42px; height: 42px; }
+      .logo-bynta,
+      .logo-ai { font-size: 26px; }
+
+      /* Regla y statement como bloque del medio */
+      .rule { margin: 0 auto 16px; }
+
+      .statement {
+        font-size: 13px;
+        line-height: 1.4;
+        margin-bottom: 0;
+        max-width: 100%;
+      }
+
+      /* "Falta poco." domina el espacio central */
+      .falta-poco {
+        font-size: 17vw;
+        letter-spacing: -0.04em;
+        margin-bottom: 0;
+        white-space: nowrap;
+      }
+
+      /* CTA al fondo */
+      .cta-wrap {
+        gap: 10px;
+        width: 100%;
+      }
+      .cta-label {
+        font-size: 11px;
+        max-width: 100%;
+      }
+
+      /* Form apilado full width */
+      .form { flex-direction: column; width: 100%; }
+      .form-input {
+        width: 100%;
+        border-right: 1px solid rgba(255,255,255,0.2);
+        border-bottom: none;
+        padding: 15px 18px;
+        font-size: 15px;
+      }
+      .form-btn {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        font-size: 11px;
+      }
+
+      .footer { bottom: 16px; font-size: 8px; letter-spacing: 0.18em; }
     }
   </style>
 </head>
